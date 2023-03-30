@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="myhospital" class="com.jsp.hospital.Hospital">
+		<property name="id" value="1"></property>
+		<property name="name" value="appllo"></property>
+		<property name="website" value="www.applo.com"></property>
+		<property name="phno" value="123456789"></property>
+		<property name="bnamelocation">
+			<map>
+				<entry>
+					<key>
+						<value>basavanagudi</value>
+					</key>
+					<value>near busststand</value>
+				</entry>
+				<entry>
+					<key>
+						<value>rajajinagar</value>
+					</key>
+					<value>near metro</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+</beans>

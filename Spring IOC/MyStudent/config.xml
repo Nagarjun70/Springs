@@ -1,0 +1,47 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="mystudent" class="com.jsp.student.student">
+
+		<property name="id" value="101"></property>
+		<property name="name" value="ARJUN"></property>
+		<property name="age" value="23"></property>
+		<property name="gender" value="male"></property>
+		<property name="phno" value="9148623670"></property>
+		<property name="marks" value="98.0"></property>
+	</bean>
+	
+	
+	<bean  id="mystudent1"  class="com.jsp.student.student">
+	
+	<property name="id">
+	<value>105</value>
+	</property>
+	
+	<property name="name">
+	<value>VIRAT</value>
+	</property>
+	
+	<property name="age">
+	<value>25</value>
+	</property>
+	
+	<property name="gender">
+	<value>male</value>
+	</property>
+	
+	<property name="phno">
+	<value>987654321</value>
+	</property>
+	
+	<property name="marks">
+	<value>99</value>
+	</property>
+	
+	</bean>
+</beans>

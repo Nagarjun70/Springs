@@ -1,0 +1,51 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="myperson" class="com.jsp.assign.Person">
+
+		<property name="id" value="101"></property>
+		<property name="name" value="ARJUN"></property>
+		<property name="phno" value="9148623670"></property>
+		<property name="mobile" ref="mymobile"></property>
+	</bean>
+
+	<bean id="mymobile" class="com.jsp.assign.Mobile">
+		<property name="id" value="100"></property>
+		<property name="brand" value="IPHONE"></property>
+		<property name="brandcolor" value="BLACK"></property>
+		<property name="amazon" ref="myamazon"></property>
+		<property name="map">
+			<map>
+				<entry>
+					<key>
+						<value>40000.0</value>
+					</key>
+					
+						<value>IPHONE</value>
+					
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="myamazon" class="com.jsp.assign.Amazon">
+		<property name="orderid" value="897"></property>
+		<property name="Quantity" value="1"></property>
+		<property name="cost" value="40000"></property>
+		<property name="item">
+		<list>
+	
+				<value>MOBILE</value>
+		
+		</list>
+		</property>
+	</bean>
+
+
+</beans>

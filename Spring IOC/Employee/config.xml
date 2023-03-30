@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <bean id="myemp1" class="com.jsp.employye.Employee" c:id="103" c:name="SHIVA" c:age="45" c:sal="670000" c:job="JVD"></bean>
+ 
+	<bean id="myemployee" class="com.jsp.employye.Employee">
+
+		<constructor-arg name="id" value="101"></constructor-arg>
+		<constructor-arg name="name" value="ARJUN"></constructor-arg>
+		<constructor-arg name="age" value="25"></constructor-arg>
+		<constructor-arg name="sal" value="55000"></constructor-arg>
+		<constructor-arg name="job" value="Developer"></constructor-arg>
+
+	</bean>
+
+
+</beans>
