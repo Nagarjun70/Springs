@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config></context:annotation-config>
+	<bean name="myclass" class="com.jsp.awa1.Hospital">
+		<property name="id" value="101"></property>
+		<property name="name" value="APOLLO"></property>
+		<property name="website" value="www.apollo.com"></property>
+
+	</bean>
+	<bean name="mybranch" class="com.jsp.awa1.Branch">
+		<property name="bid" value="100"></property>
+		<property name="name" value="Hubli"></property>
+		<property name="location" value="Near New Bus Stop"></property>
+	</bean>
+
+</beans>

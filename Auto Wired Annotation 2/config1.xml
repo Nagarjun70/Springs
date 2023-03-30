@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<context:annotation-config></context:annotation-config>
+	<!--<bean name="myperson" class="com.ty.Person" scope="prototype"> -->
+	<bean name="myperson" class="com.jsp.awa1.Person" scope="singleton">
+	</bean>
+
+	<bean name="myaddress" class="com.jsp.awa1.Address">
+		<property name="state" value="karanataka"></property>
+		<property name="country" value="India"></property>
+	</bean>
+
+
+	<bean name="myaddress2" class="com.jsp.awa1.Address">
+		<property name="state" value="Kerala"></property>
+		<property name="country" value="India"></property>
+	</bean>
+
+	<bean name="myaddress3" class="com.jsp.awa1.Address">
+		<property name="state" value="Goa"></property>
+		<property name="country" value="India"></property>
+	</bean>
+</beans>
