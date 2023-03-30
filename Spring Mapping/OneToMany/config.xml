@@ -1,0 +1,48 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="mycollege" class="com.jsp.onetomany.College">
+		<property name="id" value="101"></property>
+		<property name="name" value="KARAVALI"></property>
+		<property name="website" value="KIT.COM"></property>
+		<property name="student" ref="mystudent"></property>
+		<property name="branch" ref="mybranch"></property>
+
+	</bean>
+	<bean id="mybranch" class="com.jsp.onetomany.Branch">
+		<property name="id" value="111"></property>
+		<property name="name" value="ECE"></property>
+		<property name="location" value="MANGALORE"></property>
+		<property name="course">
+			<list>
+
+				<value>ENGINEERING</value>
+
+			</list>
+		</property>
+	</bean>
+	<bean id="mystudent" class="com.jsp.onetomany.Student">
+			<property name="id" value="112"></property>
+			<property name="name" value="ARJUN"></property>
+			<property name="age" value="24"></property>
+			<property name="SubjectMarks">
+			<map>
+				<entry>
+					<key>
+						<value>DSP</value>
+					</key>
+					
+						<value>99</value>
+					
+				</entry>
+			</map>
+		</property>
+		</bean>
+
+</beans>

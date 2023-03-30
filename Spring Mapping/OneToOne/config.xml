@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context 
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+	<bean id="myperson" class="com.jsp.onetoone.Person">
+
+		<property name="id" value="101"></property>
+		<property name="name" value="ARJUN"></property>
+		<property name="age" value="23"></property>
+		<property name="gender" value="male"></property>
+		<property name="phno" value="9148623670"></property>
+		<property name="card" ref="myadhar"></property>
+	</bean>
+	
+	<bean id="myadhar" class="com.jsp.onetoone.AdharCard">
+	<property name="id" value="897654332"></property>
+	<property name="address" value="Hubli"></property>
+	</bean>
+	
+	
+</beans>
